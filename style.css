@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  color: grey;
+  color: rgb(155, 113, 113);
 }
 
 textarea{
@@ -14,13 +14,16 @@ textarea{
   border: none;
   resize: none;
   color: lightgrey;
+  border-style: none;
   border-left: 1px solid black;
   padding: 10px;
 }
 
-textarea::selection{
-  border: none;
+textarea:focus{
+  outline:none;
+  border-left: 1px solid black;
 }
+
 
 .nope {
   font-size: 18px;
@@ -32,7 +35,7 @@ textarea::selection{
   background-color: transparent;
   color: darkgrey;
   border-radius: 0;
-  border-bottom: 10px solid rgb(141, 0, 122);
+  border-bottom: 10px solid rgb(0, 0, 0);
 }
 
 .description{
@@ -51,24 +54,25 @@ textarea::selection{
 }
 
 .hour {
-  background-color: rgb(64, 51, 87);
+  background-color: rgb(95, 35, 35);
   color: lightgrey;
   border-top: 1px dashed black;
   padding: 10px;
+  padding-top: 30px;
 }
 
 .past {
-  background-color: #575561;
+  background-color: #2e2e2e;
   color: white;
 }
 
 .present {
-  background-color: #8d0018;
+  background-color: #000000;
   color: white;
 }
 
 .future {
-  background-color: #007c4d;
+  background-color: #1f1c2c;
   color: white;
 }
 
@@ -76,11 +80,12 @@ textarea::selection{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: rgb(90, 17, 104);
+  background-color: rgb(172, 0, 0);
   color: white;
+  border-style: none;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
